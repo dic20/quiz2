@@ -4,9 +4,10 @@
  - set up the document to use ems or rems based off of a 62.5% root font size
  - a transition that moves the <p> tags over a few pixels when you hover over them (and back when you aren't hovering)*/
 
-html, bdy {
+html, body {
 	font-family: Helvetica, Arial, sans-serif;
 	background: #eeee;
+	font-size: 62.5%;
 }
 
 p {
@@ -14,8 +15,18 @@ p {
 	font-weight: bold
 }
 
+p:hover {
+	margin-left: 20px;
+}
+
 section {
 	margin-bottom: 10px;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+section:hover {
+	background-color: blue;
 }
 
 ul {
@@ -24,4 +35,20 @@ ul {
 
 ul {
 	list-style: none;
+}
+
+#accordion {
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+
+#accordion:hover {
+	background-color: grey;
+}
+
+#content {
+	color: white;
 }
