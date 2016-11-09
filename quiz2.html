@@ -1,41 +1,56 @@
-<doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-400000">
-	
+
+	<link rel="stylesheet" href="./css/quiz2.css">
 </head>
 <body>
 	<h1>Welcome To The Wonderful World of Debugging Code</h1>
 
+	<button onclick="fadeout()">Fade Out</button>
+
 	<section id="mainSection">
-		<p>This is a paragraph, I promise.</p
+		<p>This is a paragraph, I promise.</p>
 
 		<ul class="links">
 			<li>
-				<a>Link 1<a>
+				<a  href="3">Link 1</a>
 			</li>
 			<li>
 				<a href="#">Link 2</a>
 			</li>
 			<li>
-				<a href="#">Link 487
+				<a href="#">Link 487</a>
 			</li>
 		</ul>
-	
+
 
 	<p>I am a lonely paragraph, with no immediate parent.</p>
+	</section>
 
-	<section id=secondarySection>
+	<section id="secondarySection">
 		<p>Woop woop!!!</p>
 		<p>See how elegantly we're spaced out?</p>
-		<p>Yeah, we're spaced out alright.<//p>
-		
+		<p>Yeah, we're spaced out alright.</p>
+
 		<ol>
-			<li>I'm like an unordered list</li>	
+			<li>I'm like an unordered list</li>
 			<li>But I'm more orderly<li>
 			<li>That was a really bad joke.</li>
-		<ol>
+		</ol>
 	</section>
+
+	<div id="accordion" onclick="accordion()">
+		<p>Click Here</p>
+		<div id="content">
+			HERE IS TEXT!
+		</div>
+	</div>
+
+	<button onclick="makesMeHappy()">Makes Me Happy</button>
 	
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+<script src="./js/quiz2.js"></script>
 </body>
 </hmtl>

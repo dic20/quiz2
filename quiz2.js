@@ -8,8 +8,31 @@
 (function($){
 	$('.links li a').on('click', function(e) {
 		e.preventDefault()
-		alrt('you clicked a link, good for you');
+		alert('you clicked a link, good for you');
 	});
-
 	console.log("this is a message for you!!!")
-})(jQery);
+})(jQuery);
+
+(function($) {
+	$('ol li').html('other');
+	$('ol li').css('color', 'red');
+})(jQuery);
+
+function fadeout() {
+	$('body').fadeOut('slow');
+	$('body').html('<h1>GOOD BYE</h1>');
+}
+
+function accordion() {
+	if($('#accordion').css('height') < '300px') {
+		$('#accordion').css('height', '300px');
+	}
+	else {
+		$('#accordion').css('height', '20px');
+	}
+}
+
+function makesMeHappy() {
+	alert("This alert was triggered by you clicking that button");
+	$('body').html("<h1>LOL aren't alerts supper fun!</h1>");
+}
